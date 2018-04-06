@@ -1,0 +1,138 @@
+.weekly-offers-wrapper {
+  background-color: $color-grey-dark;
+  border-radius: 5px;
+}
+
+.weekly-offers {
+  position: relative;
+  border-top: 1px solid $color-black;
+  margin-top: 26px;
+  padding: 0 10px 11px 10px;
+
+  &__title {
+    margin: 0 10px;
+    color: $color-white;
+    background-color: $color-grey-dark2;
+  }
+
+  &__body {
+    padding-top: 47px;
+    font-family: $helveticaRegular;
+    color: $color-grey-light7;
+  }
+
+  &__link {
+    color: $color-white;
+
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__images {
+    position: relative;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+    height: 100%;
+
+    img:nth-child(1) {
+      width: 100%;
+    }
+
+    img:nth-child(2) {
+      position: absolute;
+      bottom: 7px;
+      left: 0;
+      width: 45%;
+    }
+
+    img:nth-child(3) {
+      position: absolute;
+      width: 40%;
+      bottom: 12px;
+      left: 0;
+    }
+  }
+
+  .offers__item {
+    display: flex;
+    padding-bottom: 30px;
+    padding-left: 8px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &__img,
+    &__body {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    &__img {
+      flex: 0 0 13%;
+    }
+
+    &__body {
+      font-family: $helveticaRegular;
+      color: $color-white;
+      font-size: 12px;
+
+      &__label {
+        font-family: $helveticaRegular;
+        color: $color-yellow;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-small) {
+  .weekly-offers {
+    margin-top: 16px;
+
+    &__title {
+      margin: 0 30px;
+    }
+
+    &__body {
+      padding-top: 37px;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+  .weekly-offers {
+    .offers__item__img {
+      flex: 0 0 10%;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .weekly-offers {
+    &__images {
+      width: 62.66%;
+    }
+
+    &__items {
+      border-left: 1px solid $color-black;
+      padding-right: 4px;
+      margin-bottom: 15px !important;
+    }
+
+    .offers__item__img {
+      flex: 0 0 30%;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-xlarge) {
+  .weekly-offers {
+    .offers__item__img {
+      flex: 0 0 22%;
+    }
+  }
+}

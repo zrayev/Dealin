@@ -1,0 +1,90 @@
+@import "fonts";
+@import "colors";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+* {
+  line-height: $font-height;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  position: relative;
+  background: linear-gradient(180deg, $color-yellow-start 70%, $color-yellow-end);
+
+  //ie9
+  @media all and (min-width:0\0) and (min-resolution:.001dpcm) {
+     background-color: $color-yellow-start;
+  }
+
+  color: $color-dark-red;
+  font-family: $pfdInTextBlack;
+  padding: 9px 15px 5px 15px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 10px;
+    top: 50%;
+    box-sizing: border-box;
+    border: 7px solid $color-yellow;
+    border-color: transparent $color-yellow $color-yellow transparent;
+    border-radius: 50%;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+  }
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    background: $color-yellow-end;
+
+    &:before {
+      border-color: $color-yellow-end;
+    }
+  }
+}
+
+.highlighted {
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  padding: 11px 26px 9px 26px;
+  border-radius: 5px;
+  font-family: $pfdInTextMedium;
+  font-size: 18px;
+}
+
+.grid-gradient_red {
+  background: linear-gradient($color-grid-red, transparent .65px), linear-gradient(90deg, $color-grid-red, transparent 0.65px);
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+.grid-gradient_grey {
+  background: linear-gradient($color-grid-grey, transparent .65px), linear-gradient(90deg, $color-grid-grey, transparent 0.65px);
+  background-size: 20px 20px;
+  background-position: center center;
+  position: relative;
+}

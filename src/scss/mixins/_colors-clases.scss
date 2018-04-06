@@ -1,0 +1,14 @@
+$colours:
+"red" #ff0000,
+"white" #ffffff,
+"grey-very-light" #f1eff1;
+
+@each $i in $colours {
+  .bg-color_#{nth($i, 1)} {
+    background-color: nth($i, 2);
+  }
+
+  .text-color_#{nth($i, 1)} {
+    color: nth($i, 2);
+  }
+}

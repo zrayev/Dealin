@@ -1,0 +1,53 @@
+// typography
+
+h1, .h1-like {
+  font-size: 50px;
+}
+
+h2, .h2-like {
+  font-size: 34px;
+}
+
+h3, .h3-like {
+  font-size: 30px;
+}
+
+h4, .h4-like {
+  font-size: 24px;
+}
+
+h5, .h5-like {
+  font-size: 18px;
+}
+
+h6, .h6-like {
+  font-size: 13px;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}

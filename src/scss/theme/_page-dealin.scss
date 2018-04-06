@@ -1,0 +1,77 @@
+.page-dealin {
+  .section-wrapper_top {
+    background: linear-gradient(180deg, $color-red-start, $color-red-end);
+
+    //ie9
+    @media all and (min-width:0\0) and (min-resolution:.001dpcm) {
+       background-color: $color-grey-start;
+    }
+  }
+
+  .section_top_red {
+    padding-top: 170px;
+  }
+
+  .buy-cta {
+    margin-bottom: 8px;
+  }
+
+  .mobile-block {
+    padding-top: 20px;
+  }
+
+  .what-applies {
+    margin-bottom: 24px;
+  }
+
+  .contact-us {
+    margin-bottom: 24px;
+  }
+
+  .weekly-offers-wrapper {
+    padding-top: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-small) {
+  .page-dealin {
+    .section_top_red {
+      padding-top: 150px;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+  .page-dealin {
+    .section_top_red {
+      padding-top: 150px;
+    }
+
+    .aside-wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .buy-cta {
+      width: 70%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .aside-wrapper {
+    display: block !important;
+  }
+
+  .buy-cta {
+    width: 100% !important;
+  }
+
+  .buy-cta-wrapper {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+}

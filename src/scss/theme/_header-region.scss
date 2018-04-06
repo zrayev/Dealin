@@ -1,0 +1,114 @@
+.header-region {
+  height: 0;
+
+  .row {
+    align-items: flex-end;
+  }
+
+  .navbar-brand {
+    text-align: center;
+
+    span {
+      font-family: $museo;
+      color: $color-white;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        font-size: 70px;
+      }
+
+      &:nth-child(even) {
+        color: $color-black;
+      }
+
+      &:last-child {
+        font-size: 18px;
+        line-height: 3.15;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .top-menu {
+    padding-bottom: 16px;
+
+    &__link {
+      color: $color-white;
+      font-size: 14px;
+      text-decoration: none;
+
+      &:active,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    float: left;
+    padding-right: 16px;
+
+    &:nth-child(2) {
+      a {
+        background: url("../img/fb-login.png");
+        height: 22px;
+        width: 69px;
+        text-indent: -9999px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+  .header-region {
+    .navbar-brand {
+      span {
+        &:nth-child(1),
+        &:nth-child(2) {
+          font-size: 90px;
+        }
+
+        &:last-child {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .header-region {
+    .navbar-brand {
+      text-align: left;
+      margin-left: auto;
+    }
+
+    ul {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-xlarge) {
+  .header-region {
+    .navbar-brand {
+      span {
+        &:nth-child(1),
+        &:nth-child(2) {
+          font-size: 96px;
+        }
+      }
+    }
+
+    .top-menu {
+      padding-bottom: 34px;
+    }
+  }
+}

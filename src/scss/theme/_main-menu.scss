@@ -1,0 +1,52 @@
+.main-menu {
+  &__link {
+    display: inline-block;
+    width: 100%;
+    font-size: 22px;
+    font-family: $pfdInTextMedium;
+    color: $color-gray;
+    margin: 10px 13px 10px 11px;
+
+    &:active,
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+
+  li {
+    background-color: $color-dark-gray;
+    margin-bottom: 2px;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+  .main-menu ul {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .main-menu {
+    float: left !important;
+
+    &__link {
+      width: 75%;
+      font-size: 20px;
+    }
+
+    li {
+      width: 135%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-xlarge) {
+  .main-menu {
+    &__link {
+      width: 75%;
+    }
+  }
+}

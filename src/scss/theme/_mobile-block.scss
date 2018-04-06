@@ -1,0 +1,86 @@
+.mobile-block {
+  &__app {
+    max-width: 110px;
+    padding: 10px 20px;
+    position: relative;
+    background-color: $color-white;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 65%;
+      top: 100%;
+      box-sizing: border-box;
+      border: 10px solid $color-white;
+      border-color: transparent transparent $color-white $color-white;
+      transform-origin: 0 0;
+      transform: rotate(315deg);
+    }
+
+    &__body {
+      max-width: 80px;
+      background: linear-gradient(180deg, $color-red-start 65%, $color-red-end);
+
+      //ie9
+      @media all and (min-width:0\0) and (min-resolution:.001dpcm) {
+         background-color: $color-grey-start;
+      }
+
+      position: absolute;
+      top: 48px;
+      bottom: 55px;
+      left: 28px;
+      width: 68%;
+      padding: 32px 8px 7px 8px;
+    }
+  }
+
+  &__google-play {
+    margin-bottom: 10px;
+  }
+
+  &__google-play,
+  &__facebook {
+    text-align: center;
+  }
+
+  .text {
+    font-family: $pfdInTextBlack;
+    font-size: 13px;
+    color: $color-white;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-small) {
+  .mobile-block {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+  .mobile-block {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .mobile-block {
+    display: block;
+
+    &__google-play,
+    &__facebook {
+      text-align: left;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.what-applies {
+  position: relative;
+  border-top: 1px solid $color-grey-light2;
+  margin-top: 24px !important;
+
+  &__title {
+    margin-left: 30px;
+    color: $color-grey-light3;
+    background-color: $color-grey-light4;
+  }
+
+  &__body {
+    padding-top: 28px;
+    color: $color-grey-light5;
+    font-family: $helveticaRegular;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .what-applies {
+    &__title {
+      margin-left: 0;
+    }
+  }
+}

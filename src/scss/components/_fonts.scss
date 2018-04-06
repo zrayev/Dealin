@@ -1,0 +1,56 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Local Fonts
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/Museo/Museo.otf");
+}
+
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("../fonts/HelveticaRegular/HelveticaRegular.woff");
+}
+
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("../fonts/HelveticaBold/HelveticaBold.woff");
+}
+
+@font-face {
+  font-family: "PFDinTextBlack";
+  src: url("../fonts/PFDinText/PFDinTextBlack-Regular.otf");
+}
+
+@font-face {
+  font-family: "PFDinTextCondensed";
+  src: url("../fonts/PFDinText/PFDinTextCondensed-Regular.otf");
+}
+
+@font-face {
+  font-family: "PFDinTextMedium";
+  src: url("../fonts/PFDinText/PFDinTextMedium-Regular.otf");
+}
+
+@font-face {
+  font-family: "PFDinTextProLight";
+  src: url("../fonts/PFDinText/pfdintextpro-light.ttf");
+}
+
+@font-face {
+  font-family: "ArialBoldMT";
+  src: url("../fonts/ArialMt/Arial-BoldMT.otf");
+}
+
+// Font Variables
+$museo: "Museo";
+$helveticaRegular: "HelveticaRegular";
+$helveticaBold: "HelveticaBold";
+$pfdInTextBlack: "PFDinTextBlack";
+$pfdInTextCondensed: "PFDinTextCondensed";
+$pfdInTextMedium: "PFDinTextMedium";
+$pfdInTextProLight: "PFDinTextProLight";
+$arialBoldMt: "ArialBoldMT";
+
+$font-height: 1.5;

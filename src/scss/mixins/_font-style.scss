@@ -1,0 +1,9 @@
+$font-styles:
+  "regular" 400,
+  "bold" 700;
+
+@each $i in $font-styles {
+  .font-weight_#{nth($i, 1)} {
+    font-weight: nth($i, 2);
+  }
+}

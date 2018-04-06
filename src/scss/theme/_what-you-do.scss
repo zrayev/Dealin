@@ -1,0 +1,36 @@
+.what-you-do {
+  position: relative;
+  border-top: 1px solid $color-grey-light2;
+  margin-top: 16px;
+
+  &__title {
+    margin-left: 30px;
+    color: $color-white;
+    background-color: $color-dark-red;
+  }
+
+  &__body {
+    padding-top: 28px;
+    padding-bottom: 25px;
+    font-family: $arialBoldMt;
+  }
+
+  &__link {
+    color: $color-red-light;
+
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .what-you-do {
+    width: 110%;
+
+    &__body {
+      width: 90%;
+    }
+  }
+}
